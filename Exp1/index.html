@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Exp 1 - India Map </title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    </head>
+    <body>
+        <h1> India Map </h1>
+        <div class="container">
+            <div id="state-info" class="state-info">
+                <h1>Hover on a state to know more.</h1>
+            </div>
+            <div id="india-map-container" class="india-map-container">
+                <img src="assets/img/india-map.png" usemap="#india-map" alt="India Map" class="india-map">
+                <map name="india-map">
+
+                        <area 
+                            class="state-pointer" 
+                            alt="Tamil Nadu" 
+                            title="Tamil Nadu" 
+                            coords="218,702,277,717" 
+                            shape="rect" 
+                            onmouseenter="document.getElementById('state-info').innerHTML=
+                            `
+                            <h1> State: Tamil Nadu </h1>
+
+                            <h2> Capital: Chennai </h2>
+
+                            <p> About the state: <br> <br> 
+                            A center for Dravidian culture, it is famous for its monumental ancient temples and classical Bharatanatyam dance. In 2025, it celebrated the 1,000-year anniversary of Rajendra Chola I's maritime expedition. 
+                            </p>
+
+                            <h3> Noticeable Tourist Places: Meenakshi Amman Temple (Madurai), Mahabalipuram, Ooty, and Kanyakumari. </h3>
+                            `">
+                        <area 
+                            class="state-pointer" 
+                            alt="Kerala" 
+                            title="Kerala" 
+                            coords="183,726,218,741" 
+                            shape="rect" 
+                            onmouseenter="document.getElementById('state-info').innerHTML=
+                            `
+                            <h1> State: Kerala </h1>
+
+                            <h2> Capital: Thiruvananthapuram </h2>
+
+                            <p> About the state: <br><br>
+                            Often called 'God's Own Country', Kerala is known for its high literacy rate, Ayurvedic traditions, lush greenery, and scenic backwaters.
+                            </p>
+
+                            <h3> Noticeable Tourist Places: Munnar, Alleppey Backwaters, Wayanad, Fort Kochi </h3>
+                            `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Karnataka" 
+                                title="Karnataka" 
+                                coords="154,611,207,629" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Karnataka </h1>
+
+                                <h2> Capital: Bengaluru </h2>
+
+                                <p> About the state: <br><br>
+                                Known as the “Silicon Valley of India,” Karnataka blends modern technology with rich heritage and historic kingdoms.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Hampi, Mysore Palace, Coorg, Bandipur National Park </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Andhra Pradesh" 
+                                title="Andhra Pradesh" 
+                                coords="239,543,317,560" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Andhra Pradesh </h1>
+
+                                <h2> Capital: Amaravati </h2>
+
+                                <p> About the state: <br><br>
+                                Known for its long coastline, spicy cuisine, and major pilgrimage centers. It is a leader in aquaculture and agriculture.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Tirupati, Araku Valley, Belum Caves, Amaravati </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Goa" 
+                                title="Goa" 
+                                coords="119,575,145,591" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Goa </h1>
+
+                                <h2> Capital: Panaji </h2>
+
+                                <p> About the state: <br><br>
+                                India’s smallest state, Goa is famous for its beaches, Portuguese heritage, and vibrant culture.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Calangute Beach, Dudhsagar Falls, Basilica of Bom Jesus </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Maharashtra" 
+                                title="Maharashtra" 
+                                coords="142,467,208,487" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Maharashtra </h1>
+
+                                <h2> Capital: Mumbai </h2>
+
+                                <p> About the state: <br><br>
+                                The economic powerhouse of India, home to Bollywood and a rich Maratha history.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Gateway of India, Ajanta & Ellora Caves, Shirdi </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Gujarat" 
+                                title="Gujarat" 
+                                coords="72,364,117,383" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Gujarat </h1>
+
+                                <h2> Capital: Gandhinagar </h2>
+
+                                <p> About the state: <br><br>
+                                An industrial and cultural hub, Gujarat is the birthplace of Mahatma Gandhi and home to the Rann of Kutch.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Statue of Unity, Gir National Park, Somnath Temple </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Madhya Pradesh" 
+                                title="Madhya Pradesh" 
+                                coords="215,369,303,388" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Madhya Pradesh </h1>
+
+                                <h2> Capital: Bhopal </h2>
+
+                                <p> About the state: <br><br>
+                                Known as the “Heart of India,” it has vast forests, wildlife reserves, and ancient monuments.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Khajuraho, Kanha National Park, Sanchi Stupa </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Odisha" 
+                                title="Odisha" 
+                                coords="390,440,428,454" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Odisha </h1>
+
+                                <h2> Capital: Bhubaneswar </h2>
+
+                                <p> About the state: <br><br>
+                                Known for ancient temples, tribal culture, and the famous Rath Yatra festival.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Konark Sun Temple, Puri, Chilika Lake </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Chhattisgarh" 
+                                title="Chhattisgarh" 
+                                coords="314,406,377,419" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Chhattisgarh </h1>
+
+                                <h2> Capital: Raipur </h2>
+
+                                <p> About the state: <br><br>
+                                Rich in minerals and forests, it has a strong tribal culture and folk traditions.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Chitrakote Falls, Bastar, Sirpur </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Rajasthan" 
+                                title="Rajasthan" 
+                                coords="120,275,170,293" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Rajasthan </h1>
+
+                                <h2> Capital: Jaipur </h2>
+
+                                <p> About the state: <br><br>
+                                The “Land of Kings,” famous for deserts, forts, and royal heritage.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Jaipur, Udaipur, Jaisalmer, Ranthambore </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Uttar Pradesh" 
+                                title="Uttar Pradesh" 
+                                coords="279,265,351,285" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Uttar Pradesh </h1>
+
+                                <h2> Capital: Lucknow </h2>
+
+                                <p> About the state: <br><br>
+                                India’s most populous state and a center of religion, history, and politics.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Taj Mahal, Varanasi, Ayodhya </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Bihar" 
+                                title="Bihar" 
+                                coords="419,299,451,317" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Bihar </h1>
+
+                                <h2> Capital: Patna </h2>
+
+                                <p> About the state: <br><br>
+                                A land of ancient civilizations, Bihar is the birthplace of Buddhism and Jainism and home to the historic Nalanda University.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Bodh Gaya, Nalanda, Rajgir </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Jharkhand" 
+                                title="Jharkhand" 
+                                coords="390,350,443,361" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Jharkhand </h1>
+
+                                <h2> Capital: Ranchi </h2>
+
+                                <p> About the state: <br><br>
+                                Known as the “Land of Forests,” Jharkhand is rich in minerals, waterfalls, and tribal culture.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Netarhat, Hundru Falls, Deoghar </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="West Bengal" 
+                                title="West Bengal" 
+                                coords="445,364,511,379" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: West Bengal </h1>
+
+                                <h2> Capital: Kolkata </h2>
+
+                                <p> About the state: <br><br>
+                                Known for its literature, art, and festivals, it is home to the Sundarbans mangrove forest.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Darjeeling, Sundarbans, Victoria Memorial </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Haryana" 
+                                title="Haryana" 
+                                coords="177,200,227,216" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Haryana </h1>
+
+                                <h2> Capital: Chandigarh </h2>
+
+                                <p> About the state: <br><br>
+                                A major agricultural and industrial state surrounding Delhi on three sides.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Kurukshetra, Surajkund, Sultanpur Bird Sanctuary </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Punjab" 
+                                title="Punjab" 
+                                coords="168,164,206,181" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Punjab </h1>
+
+                                <h2> Capital: Chandigarh </h2>
+
+                                <p> About the state: <br><br>
+                                Known as the “Granary of India,” Punjab is the heart of Sikh culture and tradition.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Golden Temple, Wagah Border, Jallianwala Bagh </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Uttarakhand" 
+                                title="Uttarakhand" 
+                                coords="244,180,309,196" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Uttarakhand </h1>
+
+                                <h2> Capital: Dehradun </h2>
+
+                                <p> About the state: <br><br>
+                                A Himalayan state known for spirituality, yoga, and natural beauty.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Rishikesh, Haridwar, Nainital </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Himachal Pradesh" 
+                                title="Himachal Pradesh" 
+                                coords="215,136,305,155" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Himachal Pradesh </h1>
+
+                                <h2> Capital: Shimla </h2>
+
+                                <p> About the state: <br><br>
+                                A Himalayan state famous for hill stations, apple orchards, and adventure sports.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Shimla, Manali, Dharamshala </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Jammu and Kashmir" 
+                                title="Jammu and Kashmir" 
+                                coords="163,66,269,83" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Jammu and Kashmir </h1>
+
+                                <h2> Capital: Srinagar (Summer), Jammu (Winter) </h2>
+
+                                <p> About the state: <br><br>
+                                Known for breathtaking landscapes, valleys, and rich cultural heritage.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Dal Lake, Gulmarg, Pahalgam </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Sikkim" 
+                                title="Sikkim" 
+                                coords="468,249,502,264" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Sikkim </h1>
+
+                                <h2> Capital: Gangtok </h2>
+
+                                <p> About the state: <br><br>
+                                India’s first fully organic state, known for monasteries and Himalayan views.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Tsomgo Lake, Nathu La Pass, Rumtek Monastery </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Meghalaya" 
+                                title="Meghalaya" 
+                                coords="537,296,591,309" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Meghalaya </h1>
+
+                                <h2> Capital: Shillong </h2>
+
+                                <p> About the state: <br><br>
+                                Known as the “Abode of Clouds,” famous for heavy rainfall and living root bridges.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Cherrapunji, Dawki, Living Root Bridges </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Tripura" 
+                                title="Tripura" 
+                                coords="541,354,582,369" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Tripura </h1>
+
+                                <h2> Capital: Agartala </h2>
+
+                                <p> About the state: <br><br>
+                                Known for royal palaces, rock carvings, and rich bamboo handicrafts.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Unakoti, Neermahal, Sepahijala </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Mizoram" 
+                                title="Mizoram" 
+                                coords="595,348,642,361" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Mizoram </h1>
+
+                                <h2> Capital: Aizawl </h2>
+
+                                <p> About the state: <br><br>
+                                A scenic hill state known for bamboo forests and vibrant tribal festivals.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Vantawng Falls, Phawngpui Peak </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Manipur" 
+                                title="Manipur" 
+                                coords="607,307,655,322" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Manipur </h1>
+
+                                <h2> Capital: Imphal </h2>
+
+                                <p> About the state: <br><br>
+                                Known as the “Jewel of India,” famous for classical dance and Loktak Lake.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Loktak Lake, Kangla Fort </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Assam" 
+                                title="Assam" 
+                                coords="582,272,618,283" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Assam </h1>
+
+                                <h2> Capital: Dispur </h2>
+
+                                <p> About the state: <br><br>
+                                Famous for tea gardens, silk production, and the one-horned rhinoceros.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Kaziranga National Park, Majuli Island </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Nagaland" 
+                                title="Nagaland" 
+                                coords="626,276,680,289" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Nagaland </h1>
+
+                                <h2> Capital: Kohima </h2>
+
+                                <p> About the state: <br><br>
+                                Known as the “Land of Festivals,” home to diverse tribes and traditions.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Dzukou Valley, Kohima War Cemetery </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Arunachal Pradesh" 
+                                title="Arunachal Pradesh" 
+                                coords="603,211,696,228" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> State: Arunachal Pradesh </h1>
+
+                                <h2> Capital: Itanagar </h2>
+
+                                <p> About the state: <br><br>
+                                Known as the “Land of the Rising Sun,” rich in tribal culture and mountains.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: Tawang Monastery, Ziro Valley </h3>
+                                `">
+                            <area 
+                                class="state-pointer" 
+                                alt="Delhi" 
+                                title="Delhi" 
+                                coords="216,223,231,237" 
+                                shape="rect" 
+                                onmouseenter="document.getElementById('state-info').innerHTML=
+                                `
+                                <h1> Union Territory: Delhi </h1>
+
+                                <h2> Capital: New Delhi </h2>
+
+                                <p> About the UT: <br><br>
+                                The national capital of India, blending ancient history with modern governance.
+                                </p>
+
+                                <h3> Noticeable Tourist Places: India Gate, Red Fort, Qutub Minar </h3>
+                                `">
+
+                </map>
+            </div>
+        </div>
+    </body>
+</html>
