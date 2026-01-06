@@ -17,6 +17,10 @@
             font-size: 58px;
         }
 
+        .continer {
+            margin: auto;
+        }
+
         .navigation-card, .info {
             background-color: rgb(149, 149, 222);
             margin: 20px auto;
@@ -24,11 +28,12 @@
             border-radius: 15px;
             padding: 20px;
             width: 60vw;
+            min-width: 840px;
         }
 
         .info {
             text-align: left;
-            font-size: 24px;
+            font-size: 20px;
             display: flex;
         }
 
@@ -62,6 +67,7 @@
 
         .photo {
             margin: auto 0 auto auto;
+            position: relative;
             width: 250px;
             height: 250px;
             display: flex;
@@ -69,36 +75,39 @@
             align-items: center;
             font-weight: bold;
         }
+
     </style>
 </head>
 <body>
-    <div class="info">
-        <div>
-            <h1> <a class="underline">Name:</a> Mohammed Parvez Y </h1>
-            <h4> <a class="underline">Registration No.:</a> 710023104034</h4>
-            <h4> <a class="underline">Branch:</a> Computer Science and Engineering</h4>
-            <h4> <a class="underline">Semester:</a> 6th Semester</h4>
-        </div>
+    <div class="continer">
+        <div class="info">
+            <div>
+                <h1> <a class="underline">Name:</a> Mohammed Parvez Y </h1>
+                <h4> <a class="underline">Registration No.:</a> 710023104034</h4>
+                <h4> <a class="underline">Branch:</a> Computer Science and Engineering</h4>
+                <h4> <a class="underline">Semester:</a> 6th Semester</h4>
+            </div>
 
-        <div class="photo">
-            <a  href="https://github.com/vezz-z" target="_blank">
-                <img src="github.png" alt="GutHub Icon" width="250px" height="250px">
-            </a>
-        </div>
+            <div class="photo">
+                <a  href="https://github.com/vezz-z" target="_blank">
+                    <img src="github.png" alt="GutHub Icon" width="250px" height="250px">
+                </a>
+            </div>
 
-    </div>
-    <div class="navigation-card">
-        <h1> Navigation Menu </h1>
-        <nav> 
-            <a target="_blank" href="Exp1/index.html"> Experiment 1</a> 
-            <a href="" id="incomplete"> Experiment 2</a> 
-            <a href="" id="incomplete"> Experiment 3</a> 
-            <a href="" id="incomplete"> Experiment 4</a> 
-            <a href="" id="incomplete"> Experiment 5</a> 
-            <a href="" id="incomplete"> Experiment 6</a> 
-            <a href="" id="incomplete"> Experiment 7</a> 
-            <a href="" id="incomplete"> Experiment 8</a>
-        </nav>
+        </div>
+        <div class="navigation-card">
+            <h1> Navigation Menu </h1>
+            <nav> 
+                <a target="_blank" href="Exp1/index.html"> Experiment 1</a> 
+                <a href="" id="incomplete"> Experiment 2</a> 
+                <a href="" id="incomplete"> Experiment 3</a> 
+                <a href="" id="incomplete"> Experiment 4</a> 
+                <a href="" id="incomplete"> Experiment 5</a> 
+                <a href="" id="incomplete"> Experiment 6</a> 
+                <a href="" id="incomplete"> Experiment 7</a> 
+                <a href="" id="incomplete"> Experiment 8</a>
+            </nav>
+        </div>
     </div>
     <script>
         const incompleteLinks = document.querySelectorAll('#incomplete');
