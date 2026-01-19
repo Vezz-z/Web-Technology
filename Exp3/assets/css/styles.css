@@ -3,9 +3,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* width: 90%; */
     padding: 70px;
     line-height: 30px;
+}
+
+h1 {
+    font-size: 48px;
 }
 
 form {
@@ -13,4 +16,20 @@ form {
     flex-direction: column;
     align-items: center;
     padding: 40px;
+    gap: 5px;
+}
+
+.input-field {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.input-field.invalid {
+    border: 2px solid red;
+}
+
+.input-label {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
 }

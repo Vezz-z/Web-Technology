@@ -1,0 +1,1 @@
+mailInput = document.getElementById('')
