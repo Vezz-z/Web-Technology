@@ -9,20 +9,25 @@
     <h1> Experiment 3 - Dynamic Hypertext Markup Language (DHTML) </h1>
     <form>
 
-        <label class="input-label" for="name"> Name: </label class="input-label">
-        <input class="input-field" type="text" name="name" placeholder="Enter Name">
+        <label class="input-label" for="name"> Name: </label>
+        <input class="input-field" type="text" name="name" placeholder="Enter Name" id="input-name">
+        <p class="invalid-input" id="invalid-name"> </p>
 
-        <label class="input-label" for="mail"> E-mail: </label class="input-label">
-        <input class="input-field" type="email" name="email" placeholder="Enter E-mail">
+        <label class="input-label" for="mail"> E-mail: </label>
+        <input class="input-field" type="email" name="email" placeholder="Enter E-mail" id="input-mail">
+        <p class="invalid-input" id="invalid-mail"> </p>
 
-        <label class="input-label" for="username"> Username: </label class="input-label">
-        <input class="input-field" type="text" name="username" placeholder="Enter Username">
+        <label class="input-label" for="username"> Username: </label>
+        <input class="input-field" type="text" name="username" placeholder="Enter Username" id="input-username">
+        <p class="invalid-input" id="invalid-username"> </p>
 
-        <label class="input-label" for="password"> Password: </label class="input-label">
-        <input class="input-field" type="password" name="password" placeholder="Enter Password">
+        <label class="input-label" for="password"> Password: </label>
+        <input class="input-field" type="password" name="password" placeholder="Enter Password" id="input-password">
+        <p class="invalid-input" id="invalid-password"> </p>
 
-        <button type="submit" disabled style="cursor: not-allowed; margin: 15px; font-size: 18px;"> Submit </button>
+        <button type="submit" class="submit-button" id="submit-button"> Submit </button>
         
     </form>
 </body>
+<script src="assets/js/scripts.js"></script>
 </html>
