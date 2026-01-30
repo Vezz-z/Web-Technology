@@ -74,7 +74,27 @@ submitButton.addEventListener('click', (event) => {
     const users = JSON.parse(localStorage.getItem('users')) || [];
     const duplicate = users.find(user => user.username === username || user.email === mail);
     if (duplicate) {
-        alert(duplicate.username === username ? 'Username already exists' : 'Email already exists');
+        let alertMessage = '';
+        if (duplicate.username === username && duplicate.email === mail) {
+            alertMessage = 'Username and E-mail';
+            usernameInput.classList.add('invalid');
+            mailInput.classList.add('invalid');
+            usernameError.textContent = 'Username already exists';
+            usernameError.classList.remove('hidden');
+            mailError.textContent = 'E-mail already exists';
+            mailError.classList.remove('hidden');
+        } else if (duplicate.email === mail) {
+            alertMessage = 'E-mail';
+            mailInput.classList.add('invalid');
+            mailError.textContent = 'E-mail already exists';
+            mailError.classList.remove('hidden');
+        } else {
+            alertMessage = 'Username';
+            usernameInput.classList.add('invalid');
+            usernameError.textContent = 'Username already exists';
+            usernameError.classList.remove('hidden');
+        }
+        alert(alertMessage + ' already exists');
         return;
     }
 
