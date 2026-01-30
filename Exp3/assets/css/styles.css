@@ -2,62 +2,37 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 70px;
-    line-height: 30px;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 48px;
-    line-height: 70px;
     text-align: center;
-    width: 100%;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    padding: 40px;
-    gap: 5px;
     max-width: 300px;
 }
 
-.input-field {
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 24px;
+input {
+    margin-bottom: 5px;
+    padding: 5px;
 }
 
-.input-field.invalid {
+input.invalid {
     border: 2px solid red;
 }
 
-.input-field.valid {
-    border: 4px solid green;
-}
-
-.input-label {
-    font-size: 28px;
-    font-weight: bold;
-    text-decoration: underline;
-    margin-left: 10px;
-}
-
-.submit-button {
-    padding: 5px;
-    margin: 15px; 
-    font-size: 18px;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-.invalid-input {
-    margin: 1px 10px;
+p {
     color: red;
-    font-size: 18px;
-    font-weight: bold;
+    margin: 0 0 10px 0;
 }
 
 .hidden {
     display: none;
+}
+
+button {
+    padding: 5px;
 }
